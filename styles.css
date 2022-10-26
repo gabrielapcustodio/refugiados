@@ -158,9 +158,6 @@ p[id="intro"] {
     margin-bottom: 15px;
     padding: 0;
 }
-.name:hover {
-    font-weight: 800;
-}
 .title_credits {
     display: block;
     text-align: center;
