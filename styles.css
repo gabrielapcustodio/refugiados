@@ -65,6 +65,7 @@ h1[id="text-title"] {
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
     font-size: 5rem;
     font-weight: 700;
+    color: rgba(252, 252, 252, 0.918);
 }
 
 /* MENU - NAV */
@@ -141,7 +142,6 @@ p[id="intro"] {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border:rgba(0, 0, 0, 0.274) solid 2px;
 }   
 .box-name, #gabriela {
     margin-left: 6vw;
