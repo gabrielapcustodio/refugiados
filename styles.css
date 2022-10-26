@@ -32,10 +32,21 @@ main {
     width: 55%;
     height: auto;
 }
-body, .text, #expediente {
+body, footer, .text {
     border: var(--border-color);
 }
+footer {
+    display: grid;
+    align-self: center;
+    align-content: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(133, 133, 133, 0.486);
+}
 .cover {
+    position: relative;
     border: var(--border-color);
     width: 100%;
     height: 90vh;
@@ -46,20 +57,51 @@ body, .text, #expediente {
     padding: 0;
     z-index: 0;
 }
-#expediente {
-    width: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.247),  rgba(255, 255, 255, 0.1));
-    background-color: rgba(0, 0, 0, 0.274);
-    display: flex;
-    flex-direction: column;
-}
-p[id="text-title"] {
+h1[id="text-title"] {
+    position: absolute;
     text-align: center;
     width: 100%;
-    height: 750px;
+    padding-top: 10%;
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.8rem;
+    font-size: 5rem;
     font-weight: 700;
+}
+
+/* MENU - NAV */
+
+#menu {
+    border: 2px solid white;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    padding-top: 0.6vw;
+    padding-left: 1vw;
+    
+}
+#menu-icon {
+    fill:white;
+}
+
+/* TEXTO */ 
+.citation-1{
+    float: left;
+    margin: 0 1em 1em 0;
+    color: rgb(182, 50, 94);
+    padding: 1em;
+    font-style: italic;
+    font-size: 1.5em;
+    width: 40%;
+    position: relative;
+}
+.citation-2{
+    float: right;
+    margin: 0 1em 1em 0;
+    color: rgb(182, 50, 94);
+    padding: 1em;
+    font-style: italic;
+    font-size: 1.5em;
+    width: 40%;
+    position: relative;
 }
 p[id="intro"] {
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
@@ -86,23 +128,26 @@ p[id="intro"] {
     background-color: white;
     border-radius: 5px;
 }
+
+/* RODAPÉ */
+
 .credit {
-    display: inline-block;
-    text-align: center;
-    align-self: center;
-    width: 772px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .box-name {
-    display: inline-block;
-    width: 250px;
-    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border:rgba(0, 0, 0, 0.274) solid 2px;
+}   
+.box-name, #gabriela {
+    margin-left: 6vw;
+    margin-right: 6vw;
 }
 .icon {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     color: rgba(0, 0, 0, 0.507);
 }
 .icon:hover{
@@ -145,7 +190,7 @@ p[id="intro"] {
   }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 640px) {
     .credit {
         display: flex;
         flex-direction: column;
@@ -158,5 +203,8 @@ p[id="intro"] {
     .title_credits {
         padding-top: 6vw;
         padding-bottom: 3vw;
+    }
+    nav[#menu] {
+        min-height: 150vw;
     }
 }
