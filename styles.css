@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:  white;
+    background-color: white;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -70,14 +70,19 @@ h1[id="text-title"] {
 
 /* MENU - NAV */
 
-#menu {
+header{
     border: 2px solid white;
     display: flex;
-    align-items:flex-start;
     justify-content:flex-start;
-    padding-top: 0.6vw;
-    padding-left: 1vw;
+}
+header, nav{
+    min-height: 75px;
     
+}
+header, nav, #menu{
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 /* TEXTO */ 
@@ -87,7 +92,7 @@ h1[id="text-title"] {
     color: rgb(182, 50, 94);
     padding: 1em;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 40%;
     position: relative;
 }
@@ -97,7 +102,7 @@ h1[id="text-title"] {
     color: rgb(182, 50, 94);
     padding: 1em;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 40%;
     position: relative;
 }
@@ -171,7 +176,7 @@ p[id="intro"] {
 /* CAPITULAR */
 
 .text > p:first-child::first-letter {
-    color: rgb(182, 50, 94);
+    color: #b6325e;
     float: left;
     font-family: Bitter;
     font-style: italic;
@@ -182,6 +187,32 @@ p[id="intro"] {
     padding-right: 1vw;
     padding-left: 1vw;
   }
+
+/* BOTÃO PARA VOLTAR */
+
+html, body {
+    scroll-behavior: smooth;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 25%;
+    background-color: rgba(182, 50, 94, 0.97);
+}
+.button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 640px) {
@@ -198,7 +229,13 @@ p[id="intro"] {
         padding-top: 6vw;
         padding-bottom: 3vw;
     }
-    nav[#menu] {
+    nav{
+        height: 150vw;
+    }
+    header, nav, #menu{
         min-height: 150vw;
+        top: 5px;
+        left: 5px;
     }
 }
+
