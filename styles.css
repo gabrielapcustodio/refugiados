@@ -21,6 +21,7 @@ body {
 header {
     border: var(--border-color);
     width: 100%;
+    min-width: 65%;
     height: 4vw;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -63,8 +64,8 @@ h1[id="text-title"] {
     width: 100%;
     padding-top: 10%;
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 600;
     color: rgba(252, 252, 252, 0.918);
 }
 
@@ -72,17 +73,17 @@ h1[id="text-title"] {
 
 header{
     /*border: 2px solid white;*/
-    display: flex;
-    justify-content:flex-start;
+
 }
 header, nav{
     min-height: 75px;
     
 }
-header, nav, #menu{
+header > nav > #menu{
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 12px;
+    left: 12px;
+    margin: 0;
 }
 
 /* TEXTO */ 
@@ -221,21 +222,8 @@ html, body {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
         align-items: center;
-        align-self: center;
-        width: 772px;
-    }
-    .title_credits {
-        padding-top: 6vw;
-        padding-bottom: 3vw;
-    }
-    nav{
-        height: 150vw;
-    }
-    header, nav, #menu{
-        min-height: 150vw;
-        top: 5px;
-        left: 5px;
+        width: 65%;
     }
 }
-
