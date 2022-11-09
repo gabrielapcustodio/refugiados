@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 header {
-    border: var(--border-color);
+    /*border: var(--border-color);*/
     width: 100%;
     min-width: 65%;
     height: 4vw;
@@ -72,7 +72,7 @@ h1[id="text-title"] {
 /* MENU - NAV */
 
 header{
-    /*border: 2px solid white;*/
+    border: 2px solid white;
 
 }
 header, nav{
@@ -91,9 +91,9 @@ header > nav > #menu{
     float: left;
     margin: 0 1em 1em 0;
     color: rgb(182, 50, 94);
-    padding: 1em;
+    padding: 5px;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 24px;
     width: 40%;
     position: relative;
 }
@@ -101,16 +101,16 @@ header > nav > #menu{
     float: right;
     margin: 0 1em 1em 0;
     color: rgb(182, 50, 94);
-    padding: 1em;
+    padding: 5px;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 24px;
     width: 40%;
     position: relative;
 }
 p[id="intro"] {
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 25px;
+    line-height: 1.5;
     font-style: italic;
     font-weight: 600;
     margin: 0;
@@ -123,14 +123,19 @@ p[id="intro"] {
 }
 .text {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 25px;
     line-height: 1.6;
     padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
+    padding-bottom: 2.5vw;
     padding-right: 3vw;
     padding-left: 3vw;
     background-color: white;
     border-radius: 5px;
+}
+
+.text > p {
+    margin: 0;
+    padding-bottom: 0.5 vw;
 }
 
 /* RODAPÉ */
@@ -216,7 +221,42 @@ html, body {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 640px) {
+@media (max-width: 500px) {
+    /* TEXT */
+    .text {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 1.6;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .citation-1{
+        float: left;
+        margin: 0 1em 1em 0;
+        color: rgb(182, 50, 94);
+        padding: 5px;
+        font-style: italic;
+        font-size: 14px;
+        width: 40%;
+        position: relative;
+    }
+    
+    .citation-2{
+        float: left;
+        margin: 0 1em 1em 0;
+        color: rgb(182, 50, 94);
+        padding: 5px;
+        font-style: italic;
+        font-size: 14px;
+        width: 40%;
+        position: relative;
+    }
+
+    /* FOOTER */
     .credit {
         display: flex;
         flex-direction: column;
