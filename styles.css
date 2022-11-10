@@ -30,7 +30,7 @@ header {
     z-index: 1;
 }
 main {
-    width: 55%;
+    width: 65%;
     height: auto;
 }
 body, footer, .text {
@@ -128,9 +128,8 @@ p[id="intro"] {
     border-radius: 5px;
 }
 
-.text > p {
-    margin: 0;
-    padding-bottom: 0.5 vw;
+.text, p {
+    padding-bottom: 5px;
 }
 
 /* RODAPÉ */
