@@ -70,11 +70,6 @@ h1[id="text-title"] {
 }
 
 /* MENU - NAV */
-
-header{
-    border: 2px solid white;
-
-}
 header, nav{
     min-height: 75px;
     
