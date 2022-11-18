@@ -7,6 +7,7 @@ referência https://css-tricks.com/designing-for-long-form-articles/
 :root {
     /*--border-color: 2px solid black;*/
     --color1: rgb(173, 173, 255);
+    --colorGray: rgb(24,24,24); 
 }
 body {
     display: flex;
@@ -61,12 +62,13 @@ footer {
 h1[id="text-title"] {
     position: absolute;
     text-align: center;
-    width: 100%;
     padding-top: 10%;
-    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Bitter, 'Georgia', 'Times New Roman', serif;
+    font-size: 51px;
     font-weight: 600;
-    color: rgba(252, 252, 252, 0.918);
+    color: rgba(252, 252, 252);
 }
 
 /* MENU - NAV */
@@ -127,60 +129,73 @@ p[id="intro"] {
     border-radius: 5px;
 }
 .text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-family: Domine, 'Times New Roman', serif;
+    font-size: 20px;
     line-height: 1.6;
     padding-top: 1.5vw;
-    padding-bottom: 2.5vw;
+    padding-bottom: 2.0vw;
     padding-right: 3vw;
     padding-left: 3vw;
     background-color: white;
     border-radius: 5px;
 }
 
-.text, p {
-    padding-bottom: 5px;
+.text > h2 {
+    font-family: Domine, 'Times New Roman', serif;
+    font-weight: 700;
 }
 
 /* RODAPÉ */
+footer{
+    padding-bottom: 3.5vw;
+}
+
+.title_credits {
+    display: block;
+    text-align: center;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 3.5vw;
+    color: var(--colorGray);
+}
 
 .credit {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .box-name {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}   
+} 
+
 .box-name, #gabriela {
     margin-left: 6vw;
     margin-right: 6vw;
+    color: var(--colorGray);
 }
+
 .icon {
-    color: rgba(0, 0, 0, 0.507);
+    color: var(--colorGray);
 }
+
 .icon:hover{
     transform: scale(1.1);
 }
+
 .name {
     display: block;
-    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-family: Bitter, 'Georgia', 'Times New Roman', serif;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
     padding: 0;
-}
-.title_credits {
-    display: block;
-    text-align: center;
-    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    margin: 0;
-    padding-top: 4.5vw;
+    color: var(--colorGray);
 }
 
 /* CAPITULAR */
