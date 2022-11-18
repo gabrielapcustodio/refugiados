@@ -5,8 +5,6 @@ referência https://css-tricks.com/designing-for-long-form-articles/
 */
 
 :root {
-    /*--border-color: 2px solid black;*/
-    --color1: rgb(173, 173, 255);
     --colorGray: rgb(24,24,24); 
 }
 body {
@@ -16,6 +14,7 @@ body {
     align-items: center;
     background-color: white;
     min-height: 100vh;
+    min-width: 880px;
     margin: 0;
     padding: 0;
 }
@@ -34,17 +33,16 @@ main {
     width: 65%;
     height: auto;
 }
-body, footer, .text {
-    border: var(--border-color);
-}
+
 footer {
     display: grid;
     align-self: center;
     align-content: center;
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 3vw;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: rgba(133, 133, 133, 0.486);
 }
 .cover {
@@ -85,9 +83,9 @@ header > nav > #menu{
 
 /* TEXTO */ 
 blockquote{
-    text-align: center;
     font-style: italic;
     font-weight:bolder;
+    text-align: center;
     font-size: 26px;
     color: rgb(182, 50, 94);
     margin: 0%;
@@ -97,21 +95,13 @@ blockquote{
 blockquote:before {
     content: "“";
     font-family: Bitter;
-    font-size: 150px;
-    position: relative;
-    top: -.05em;
-    left: 50%;
-    margin: 0px;
-    padding: 0px;
-    color: rgb(182, 50, 94, 0.5);
+
+    color: rgb(182, 50, 94);
 }
 blockquote:after {
     content: "”";
     font-family: Bitter;
-    font-size: 150px;   
-    position: relative;
-    right: 50%;
-    color: rgb(182, 50, 94, 0.5);
+    color: rgb(182, 50, 94);
 }
 
 p[id="intro"] {
@@ -125,7 +115,6 @@ p[id="intro"] {
     padding-bottom: 2vw;
     padding-right: 3vw;
     padding-left: 3vw;
-    border: var(--border-color);
     border-radius: 5px;
 }
 .text {
@@ -146,9 +135,6 @@ p[id="intro"] {
 }
 
 /* RODAPÉ */
-footer{
-    padding-bottom: 3.5vw;
-}
 
 .title_credits {
     display: block;
@@ -157,7 +143,7 @@ footer{
     font-size: 25px;
     line-height: 1.6;
     margin: 0;
-    padding-top: 3.5vw;
+    padding-top: 3vw;
     color: var(--colorGray);
 }
 
@@ -191,7 +177,7 @@ footer{
 .name {
     display: block;
     font-family: Bitter, 'Georgia', 'Times New Roman', serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 15px;
     padding: 0;
