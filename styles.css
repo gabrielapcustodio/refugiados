@@ -156,6 +156,24 @@ figure {
     text-align: center;
 }
 
+#img-alex {
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-daniel {
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-acnur {
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* TEXTOS */
 
 .text {
