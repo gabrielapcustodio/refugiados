@@ -64,7 +64,8 @@ a {
 figure {
     display: inline-block;
     background-color: white;
-    padding-bottom: 5rem; 
+    margin: 0.5em;
+    padding-bottom: 5em; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
     0 6px 10px 0 rgba(0, 0, 0, 0.08);
     font-family: Domine, 'Times New Roman', serif;
