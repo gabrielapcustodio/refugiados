@@ -46,17 +46,18 @@ footer {
     height: 30vh;
     background-color: rgba(133, 133, 133, 0.486);
 }
-.cover {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background-image: url("https://images.unsplash.com/photo-1523274974668-f24ffb8b94a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
+
+/* MARCADOR DE TEXTO */
+mark {
+    border-radius: 1em 0 1em 0;
+    background: linear-gradient(
+        353deg,
+        rgba(244,140,175,1) 0%,
+        rgba(244,77,132,1) 38%,
+        rgba(221,47,105,1) 65%,
+        rgba(182,50,94,1) 87%);
 }
+
 h1[id="text-title"] {
     position: absolute;
     text-align: center;
@@ -117,6 +118,35 @@ p[id="intro"] {
     padding-left: 3vw;
     border-radius: 5px;
 }
+
+/* IMAGENS*/
+.cover {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1523274974668-f24ffb8b94a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+figure {
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 5rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+    0 6px 10px 0 rgba(0, 0, 0, 0.08);
+    font-family: Domine, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* TEXTOS */
+
 .text {
     font-family: Domine, 'Times New Roman', serif;
     font-size: 20px;
@@ -200,17 +230,6 @@ p[id="intro"] {
     padding-right: 1vw;
     padding-left: 1vw;
   }
-
-/* MARCADOR DE TEXTO */
-mark {
-    border-radius: 1em 0 1em 0;
-    background: linear-gradient(
-        353deg,
-        rgba(244,140,175,1) 0%,
-        rgba(244,77,132,1) 38%,
-        rgba(221,47,105,1) 65%,
-        rgba(182,50,94,1) 87%);
-}
 
 /* BOTÃO PARA VOLTAR */
 
