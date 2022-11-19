@@ -9,6 +9,12 @@
     --colorLinksVisited: rgba(105, 105, 105, 0.9);
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
 main {
     width: 65%;
     height: auto;
@@ -42,7 +48,9 @@ header {
 }
 
 header, nav{
-    min-height: 75px;
+    max-height: 3em;
+    min-height: 3em;
+    width: auto;
 }
 
 a {
@@ -263,6 +271,10 @@ p[id="intro"] {
     padding-right: 1vw;
     padding-left: 1vw;
   }
+
+#menu-icon {
+    
+}
 
 .button {
     display: flex;
