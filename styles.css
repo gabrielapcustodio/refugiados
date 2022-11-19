@@ -88,7 +88,7 @@ blockquote{
     font-weight:bolder;
     text-align: center;
     font-size: 26px;
-    color: rgb(182, 50, 94);
+    color: var(--colorPink);
     margin: 0%;
     padding-left: 10%;
     padding-right: 10%;
@@ -97,12 +97,12 @@ blockquote:before {
     content: "“";
     font-family: Bitter;
 
-    color: rgb(182, 50, 94);
+    color: var(--colorPink);
 }
 blockquote:after {
     content: "”";
     font-family: Bitter;
-    color: rgb(182, 50, 94);
+    color: var(--colorPink);
 }
 
 p[id="intro"] {
@@ -188,7 +188,7 @@ p[id="intro"] {
 /* CAPITULAR */
 
 .text > p:first-child::first-letter {
-    color: #b6325e;
+    color: var(--colorPink);
     float: left;
     font-family: Bitter;
     font-style: italic;
@@ -202,7 +202,8 @@ p[id="intro"] {
 
 /* MARCADOR DE TEXTO */
 .text-marker {
-    background-color: ;
+    background-color: var(--colorPink);
+    color: white;
 }
   
 /* BOTÃO PARA VOLTAR */
