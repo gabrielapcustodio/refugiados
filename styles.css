@@ -47,15 +47,15 @@ footer {
     background-color: rgba(133, 133, 133, 0.486);
 }
 
-/* MARCADOR DE TEXTO */
 mark {
-    border-radius: 1em 0 1em 0;
+    border-radius: 6em 1em 8em 0;
     background: linear-gradient(
-        353deg,
+        -100deg,
         rgba(244,140,175,1) 0%,
-        rgba(244,77,132,1) 38%,
-        rgba(221,47,105,1) 65%,
-        rgba(182,50,94,1) 87%);
+        rgba(244,77,132,1) 58%,
+        rgba(221,47,105,1) 75%,
+        rgba(182,50,94,1) 100%);
+    padding: 3px;
 }
 
 h1[id="text-title"] {
@@ -143,7 +143,6 @@ figure {
     font-size: 16px;
     text-align: center;
 }
-
 
 /* TEXTOS */
 
