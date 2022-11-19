@@ -1,8 +1,6 @@
-/* 
+/*  referência https://css-tricks.com/designing-for-long-form-articles/  */
 
-referência https://css-tricks.com/designing-for-long-form-articles/ 
-
-*/
+/* || GENERAL STYLES */
 
 :root {
     --colorGray: rgb(24,24,24);
@@ -10,6 +8,16 @@ referência https://css-tricks.com/designing-for-long-form-articles/
     --colorLinks: rgb(116, 25, 55);
     --colorLinksVisited: rgba(105, 105, 105, 0.9);
 }
+
+main {
+    width: 65%;
+    height: auto;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -21,6 +29,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     /*border: var(--border-color);*/
     width: 100%;
@@ -32,116 +41,16 @@ header {
     background-color: rgba(0, 0, 0, 0.274);
     z-index: 1;
 }
-main {
-    width: 65%;
-    height: auto;
-}
 
-footer {
-    display: grid;
-    align-self: center;
-    align-content: center;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr;
-    padding-bottom: 3vw;
-    width: 100%;
-    height: 30vh;
-    background-color: rgba(133, 133, 133, 0.486);
-}
-
-mark {
-    border-radius: 6em 1em 8em 0;
-    background: linear-gradient(
-        -100deg,
-        rgba(244,140,175,1) 0%,
-        rgba(244,77,132,1) 58%,
-        rgba(221,47,105,1) 75%,
-        rgba(182,50,94,1) 100%);
-    padding: 3px;
-}
-
-h1[id="text-title"] {
-    position: absolute;
-    text-align: center;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: Bitter, 'Georgia', 'Times New Roman', serif;
-    font-size: 51px;
-    font-weight: 600;
-    color: rgba(252, 252, 252);
+header, nav{
+    min-height: 75px;
+    
 }
 
 a {
     color: var(--colorLinks);
     text-decoration: none;
     font-style: italic;
-}
-
-a:visited {
-    color: var(--colorLinksVisited);
-}
-
-/* MENU - NAV */
-header, nav{
-    min-height: 75px;
-    
-}
-header > nav > #menu{
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    margin: 0;
-}
-
-/* TEXTO */ 
-blockquote{
-    font-style: italic;
-    font-weight:bolder;
-    text-align: center;
-    font-size: 26px;
-    color: var(--colorPink);
-    margin: 0%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-blockquote:before {
-    content: "“";
-    font-family: Bitter;
-
-    color: var(--colorPink);
-}
-blockquote:after {
-    content: "”";
-    font-family: Bitter;
-    color: var(--colorPink);
-}
-
-p[id="intro"] {
-    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    line-height: 1.5;
-    font-style: italic;
-    font-weight: 600;
-    margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
-    padding-right: 3vw;
-    padding-left: 3vw;
-    border-radius: 5px;
-}
-
-/* IMAGENS*/
-.cover {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background-image: url("https://images.unsplash.com/photo-1523274974668-f24ffb8b94a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
 }
 
 figure {
@@ -156,25 +65,76 @@ figure {
     text-align: center;
 }
 
-#img-alex {
-    height: 550px;
-    justify-content: center;
-    align-items: center;
+blockquote{
+    font-style: italic;
+    font-weight:bolder;
+    text-align: center;
+    font-size: 26px;
+    color: var(--colorPink);
+    margin: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-#img-daniel {
-    height: 250px;
-    justify-content: center;
-    align-items: center;
+mark {
+    border-radius: 6em 1em 8em 0;
+    background: linear-gradient(
+        -100deg,
+        rgba(244,140,175,1) 0%,
+        rgba(244,77,132,1) 58%,
+        rgba(221,47,105,1) 75%,
+        rgba(182,50,94,1) 100%);
+    padding: 3px;
 }
 
-#img-acnur {
-    height: 550px;
-    justify-content: center;
-    align-items: center;
+footer {
+    display: grid;
+    align-self: center;
+    align-content: center;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 3vw;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(133, 133, 133, 0.486);
 }
 
-/* TEXTOS */
+h1[id="text-title"] {
+    position: absolute;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Bitter, 'Georgia', 'Times New Roman', serif;
+    font-size: 51px;
+    font-weight: 600;
+    color: rgba(252, 252, 252);
+}
+
+/* || SITEWIDE */
+
+a:visited {
+    color: var(--colorLinksVisited);
+}
+
+header > nav > #menu{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    margin: 0;
+}
+
+blockquote:before {
+    content: "“";
+    font-family: Bitter;
+
+    color: var(--colorPink);
+}
+blockquote:after {
+    content: "”";
+    font-family: Bitter;
+    color: var(--colorPink);
+}
 
 .text {
     font-family: Domine, 'Times New Roman', serif;
@@ -195,7 +155,7 @@ figure {
     color: var(--colorGray);
 }
 
-/* RODAPÉ */
+/* Rodapé */
 
 .title_credits {
     display: block;
@@ -245,7 +205,53 @@ figure {
     color: var(--colorGray);
 }
 
-/* CAPITULAR */
+/* Imagens */
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1523274974668-f24ffb8b94a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+#img-alex {
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-daniel {
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-acnur {
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* || UTILITIES */
+
+p[id="intro"] {
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    border-radius: 5px;
+}
 
 .text > p:first-child::first-letter {
     color: var(--colorPink);
@@ -260,11 +266,6 @@ figure {
     padding-left: 1vw;
   }
 
-/* BOTÃO PARA VOLTAR */
-
-html, body {
-    scroll-behavior: smooth;
-}
 .button {
     display: flex;
     justify-content: center;
@@ -279,57 +280,10 @@ html, body {
     border-radius: 25%;
     background-color: var(--colorPink);
 }
+
 .button:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 500px) {
-    /* TEXT */
-    .text {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        line-height: 1.6;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
-        padding-right: 20px;
-        padding-left: 20px;
-        background-color: white;
-        border-radius: 5px;
-    }
-    .citation-1{
-        float: left;
-        margin: 0 1em 1em 0;
-        color: var(--colorPink);
-        padding: 5px;
-        font-style: italic;
-        font-size: 14px;
-        width: 40%;
-        position: relative;
-    }
-    
-    .citation-2{
-        float: left;
-        margin: 0 1em 1em 0;
-        color: var(--colorPink);
-        padding: 5px;
-        font-style: italic;
-        font-size: 14px;
-        width: 40%;
-        position: relative;
-    }
-
-    /* FOOTER */
-    .credit {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 65%;
-    }
 }
