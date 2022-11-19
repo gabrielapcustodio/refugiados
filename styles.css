@@ -5,7 +5,8 @@ referência https://css-tricks.com/designing-for-long-form-articles/
 */
 
 :root {
-    --colorGray: rgb(24,24,24); 
+    --colorGray: rgb(24,24,24);
+    --colorPink: rgb(182, 50, 94);
 }
 body {
     display: flex;
@@ -199,6 +200,11 @@ p[id="intro"] {
     padding-left: 1vw;
   }
 
+/* MARCADOR DE TEXTO */
+.text-marker {
+    background-color: ;
+}
+  
 /* BOTÃO PARA VOLTAR */
 
 html, body {
