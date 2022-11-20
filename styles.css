@@ -61,6 +61,30 @@ a {
     font-style: italic;
 }
 
+h2 {
+    font-family: Domine, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--colorGray);
+    padding: 0.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+h4 {
+    font-size: 0.9em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+p {
+    padding: 0.5em;
+}
+
 figure {
     display: inline-block;
     background-color: white;
@@ -164,19 +188,6 @@ nav ul li a {
     background-color: white;
     color: var(--colorGray);
     border-radius: 5px;
-}
-
-.text > h2 {
-    font-family: Domine, 'Times New Roman', serif;
-    font-size: 1.4em;
-    font-weight: 700;
-    text-align: center;
-    color: var(--colorGray);
-    padding: 0.2em;
-}
-
-.text > p {
-    padding: 0.5em;
 }
 
 /* Rodapé */
