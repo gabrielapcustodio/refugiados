@@ -88,7 +88,6 @@ p {
 figure {
     display: inline-block;
     background-color: white;
-    margin: 0.5em;
     padding-bottom: 5em; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
     0 6px 10px 0 rgba(0, 0, 0, 0.08);
@@ -96,9 +95,28 @@ figure {
     font-style: italic;
     font-size: 16px;
     text-align: center;
+    margin: auto;
+    width: auto;
+    position: relative;
 }
 
-blockquote{
+figcaption {
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+figure, img {
+    overflow: hidden;
+    background: #fff;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+blockquote {
     font-style: italic;
     font-weight:bolder;
     text-align: center;
@@ -174,7 +192,6 @@ nav ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-
 }
 
 .text {
@@ -255,9 +272,7 @@ nav ul li a {
 }
 
 #img-alex {
-    height: 550px;
-    justify-content: center;
-    align-items: center;
+    height: 500px;
 }
 
 #img-daniel {
@@ -313,11 +328,6 @@ p[id="intro"] {
     padding-right: 1vw;
     padding-left: 1vw;
   }
-
-#grafico-scroll{
-    width: auto;
-    height: 5em;
-}
 
 .button {
     display: flex;
