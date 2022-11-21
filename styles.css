@@ -247,7 +247,6 @@ blockquote:after {
     font-family: Bitter, 'Georgia', 'Times New Roman', serif;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 15px;
     padding: 0;
     color: var(--colorGray);
 }
@@ -320,7 +319,7 @@ p[id="intro"] {
     font-family: Bitter, sans-serif;
     font-style: italic;
     font-weight: 00;
-    font-size: 8vw;
+    font-size: 10vw;
     line-height: 6vw;
     padding-top: 1vw;
     padding-right: 1vw;
@@ -333,6 +332,8 @@ p[id="intro"] {
     font-size: 0.9em;
     font-family: Bitter, Verdana, Tahoma, sans-serif;
     margin-bottom: 2em;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .button {
