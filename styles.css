@@ -72,6 +72,7 @@ h2 {
 h3 {
     font-size: 1.1em;
     text-align: center;
+    padding-top: 0.7em;
 }
 
 h4 {
@@ -81,7 +82,7 @@ h4 {
 }
 
 p {
-    padding: 0.5em;
+    padding: 0.6em;
 }
 
 figure {
@@ -90,23 +91,24 @@ figure {
     padding-bottom: 5em; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
     0 6px 10px 0 rgba(0, 0, 0, 0.08);
-    font-family: Domine, 'Times New Roman', serif;
-    font-style: italic;
     font-size: 16px;
     text-align: center;
-    margin: auto;
+    margin: 0.8em;
     width: auto;
     position: relative;
 }
 
 figcaption {
+    font-family: Bitter, 'Times New Roman', serif;
+    font-size: 0.9em;
+    font-weight: 400;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     background: var(--pastel-pink);
     position: absolute;
     bottom: 0;
     right: 0;
-    width: auto;
+    width: 100%;
 }
 
 figure, img {
@@ -114,6 +116,7 @@ figure, img {
     background: var(--light-blue);
     padding: 0.3em;
     border-radius: 5px;
+    vertical-align: middle;
 }
 
 blockquote {
@@ -146,7 +149,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     padding-bottom: 3vw;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-color: rgba(172, 172, 172, 0.486);
 }
 
@@ -169,6 +172,9 @@ blockquote:after {
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-family: Domine, 'Times New Roman', serif;
     font-size: 20px;
     line-height: 1.6;
@@ -251,7 +257,7 @@ blockquote:after {
 .cover {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 32em;
     background-image: url("https://images.unsplash.com/photo-1523274974668-f24ffb8b94a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
     background-size:cover;
     background-repeat: no-repeat;
@@ -260,21 +266,21 @@ blockquote:after {
     z-index: 1;
 }
 
+.text, figure, img, figcaption {
+    align-items: center;
+}
+
 #img-alex {
     height: 400px;
-    justify-content: center;
-    align-items: center;
     
 }
 
 #img-daniel {
     height: 400px;
-    justify-content: center;
-    align-items: center;
 }
 
 #img-acnur {
-    height: 550px;
+    height: 500px;
     justify-content: center;
     align-items: center;
 }
@@ -311,7 +317,7 @@ p[id="intro"] {
 .text > p:first-child::first-letter {
     color: var(--terra-cotta);
     float: left;
-    font-family: Bitter;
+    font-family: Bitter, sans-serif;
     font-style: italic;
     font-weight: 00;
     font-size: 8vw;
@@ -320,6 +326,14 @@ p[id="intro"] {
     padding-right: 1vw;
     padding-left: 1vw;
   }
+
+.info-tcc {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.9em;
+    font-family: Bitter, Verdana, Tahoma, sans-serif;
+    margin-bottom: 2em;
+}
 
 .button {
     display: flex;
