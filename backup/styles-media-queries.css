@@ -1,0 +1,47 @@
+@media (max-width: 960px) {
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    footer {
+        display: grid;
+        align-self: center;
+        align-content: center;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 3vw;
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(172, 172, 172, 0.486);
+    }
+
+    .title_credits {
+        font-size: 20px;
+    }
+
+    .credit{
+
+    
+    }
+    .info-tcc {
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    .box-name{
+
+
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .icon {
+
+    }
+}
