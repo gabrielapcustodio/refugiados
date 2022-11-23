@@ -152,7 +152,6 @@ footer {
     align-content: center;
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr;
-    padding-bottom: 3vw;
     width: 100%;
     height: 18em;
     background-color: rgba(172, 172, 172, 0.486);
@@ -209,14 +208,13 @@ blockquote:after {
 
 /* Rodapé */
 
-.title_credits {
+footer > .title-credits {
     display: block;
     text-align: center;
     font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    line-height: 1.6;
-    margin: 0;
-    padding-top: 3vw;
+    height: 25px;
+    margin-top: 2em;
     color: var(--colorGray);
 }
 
@@ -224,6 +222,7 @@ blockquote:after {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 1.5em;
 }
 
 .box-name {
@@ -347,10 +346,8 @@ iframe{
     justify-content: center;
     font-size: 1em;
     font-family: Bitter, Verdana, Tahoma, sans-serif;
-    margin-left: 12.5em;
-    margin-right: 12.5em;
-    padding-left: 3em;
-    padding-right: 3em;
+    height: 4.2em;
+    margin: 0 15.5em 0 15.5em;
 }
 
 #orientacao {
@@ -556,7 +553,7 @@ div#observablehq-input-88da7e6f {
         background-color: rgba(172, 172, 172, 0.486);
     }
 
-    .title_credits {
+    .title-credits {
         font-size: 20px;
     }
 
