@@ -183,10 +183,7 @@ blockquote:after {
     display: block;
     font-family: Domine, 'Times New Roman', serif;
     font-size: 20px;
-<<<<<<< HEAD
     line-height: 1.6;
-=======
->>>>>>> 0d23d81121f388f03dcb497d77b4d2232a11d18e
     background-color: white;
     color: var(--colorGray);
     border-radius: 5px;
@@ -195,7 +192,7 @@ blockquote:after {
 /* Progress bar */
 #progress-bar {
     --scrollAmount: 0%;
-    background-image: linear-gradient(120deg, #74BDD1 0%,rgba(168, 208, 219, 0.7) 100%);
+    background-image: linear-gradient(120deg, #74BDD1 0%,rgba(168, 208, 219, 0.9) 100%);
     width: var(--scrollAmount);
   
     /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount),
@@ -425,13 +422,10 @@ div#observablehq-input-88da7e6f {
 
 .scrolly {
     position: relative;
-<<<<<<< HEAD
     padding: 0 16px 2em 16px;
     margin: auto;
-=======
     margin: 0;
     padding: 2rem;
->>>>>>> 0d23d81121f388f03dcb497d77b4d2232a11d18e
 }
 
 #title-graph {
@@ -614,6 +608,10 @@ div#observablehq-input-88da7e6f {
         margin: 16px auto;
         max-width: 90vw;
         font-size: 15px;
+    }
+
+    #first-letter {
+        font-size: 8vw;
     }
 
     .box-name {
