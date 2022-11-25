@@ -98,8 +98,16 @@ h4 {
     line-height: 1.2;
 }
 
-p {
+h3 {
+    padding-top: 1.5em;
     padding-bottom: 1em;
+    text-align: center;
+}
+
+article > p {
+    line-height: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 figure {
@@ -181,7 +189,10 @@ blockquote:after {
     display: block;
     font-family: Domine, 'Times New Roman', serif;
     font-size: 20px;
+<<<<<<< HEAD
     line-height: 1.6;
+=======
+>>>>>>> 0d23d81121f388f03dcb497d77b4d2232a11d18e
     background-color: white;
     color: var(--colorGray);
     border-radius: 5px;
@@ -416,8 +427,13 @@ div#observablehq-input-88da7e6f {
 
 .scrolly {
     position: relative;
+<<<<<<< HEAD
     padding: 0 16px 2em 16px;
     margin: auto;
+=======
+    margin: 0;
+    padding: 2rem;
+>>>>>>> 0d23d81121f388f03dcb497d77b4d2232a11d18e
 }
 
 #title-graph {
@@ -463,7 +479,7 @@ div#observablehq-input-88da7e6f {
   max-width: 100vw;
 }
 
-.sticky-thing.center {
+.sticky-thing center {
   top: 0;
 }
 
