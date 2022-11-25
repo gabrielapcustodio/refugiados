@@ -67,7 +67,7 @@ h2 {
     text-align: center;
     color: var(--colorGray);
     margin: 16px 0 16px 0;
-    padding-top: 12px;
+    padding: 45px 0 10px 0;
 }
 
 h3 {
@@ -128,7 +128,7 @@ figcaption {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    padding: 30px 30px 30px 30px;
+    padding: 15px 30px 15px 30px;
     margin: 0;
 }
 
@@ -258,13 +258,13 @@ blockquote:after {
 
 .cover {
     position: relative;
+    background-repeat: repeat;
+    background-image: url("images/pattern.png");
     width: 100%;
-    height: 25em;
-    background-color: rgba(168, 208, 219, 0.651);
-    background-repeat: no-repeat;
+    height: 30em;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .imagem {
@@ -286,10 +286,10 @@ h1#text-title {
     position: absolute;
     text-align: center;
     padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     font-family: Bitter, 'Georgia', 'Times New Roman', serif;
-    font-size: 51px;
+    font-size: 70px;
     font-weight: 600;
     color: var(--pastel-pink);
 }
@@ -307,7 +307,7 @@ p#intro {
     padding-right: 3vw;
     padding-left: 3vw;
     border-radius: 5px;
-    width: 70vw;
+    width: 75vw;
     max-width: 800px;
 }
 
@@ -317,15 +317,20 @@ p#intro {
     font-family: Bitter, sans-serif;
     font-style: italic;
     font-weight: 00;
-    font-size: 14vw;
-    line-height: 10vw;
+    font-size: 12vw;
+    line-height: 4vw;
     padding-top: 1vw;
     padding-right: 1vw;
     padding-left: 1vw;
+    margin: 40px 20px 40px 0;
 }
 
 #title-graph {
     padding-bottom: 1px;
+}
+
+p:last-of-type {
+    padding-bottom: 30px;
 }
 
 a.flourish-credit {
@@ -610,8 +615,8 @@ div#observablehq-input-88da7e6f {
         font-size: 15px;
     }
 
-    #first-letter {
-        font-size: 8vw;
+    .first-letter {
+        font-size: 6vw;
     }
 
     .box-name {
