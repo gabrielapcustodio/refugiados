@@ -291,7 +291,7 @@ h1#text-title {
     padding-left: 20%;
     padding-right: 20%;
     font-family: Bitter, 'Georgia', 'Times New Roman', serif;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     color: var(--pastel-pink);
 }
@@ -340,14 +340,12 @@ a.flourish-credit {
 }
 
 iframe {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    margin-bottom: 24px;
-    border-bottom: 1px solid var(--colorGray);
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 iframe.map {
-    width: 100vw;
+    width: 98.77vw;
 }
 
 .info-tcc {
