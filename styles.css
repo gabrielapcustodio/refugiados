@@ -111,20 +111,25 @@ article > p {
 }
 
 figure {
-    display: block;
-    margin: auto auto 24px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     height: fit-content;
-    border-bottom: 2px solid var(--colorGray);
-    border-top: 4px solid var(--colorGray);
-    padding-top: 10px;
+    border-top: 10px solid var(--light-blue);
+    border-radius: 8px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 figcaption {
     font-family: Bitter, 'Times New Roman', serif;
+    background-color: var(--light-blue);
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
-    padding: 10px 0;
-    margin: auto;
+    line-height: 25px;
+    padding: 30px 30px 30px 30px;
+    margin: 0;
 }
 
 blockquote {
@@ -136,17 +141,6 @@ blockquote {
     margin: 0%;
     padding-left: 10%;
     padding-right: 10%;
-}
-
-mark {
-    border-radius: 6em 1em 8em 0;
-    background: linear-gradient(
-        -100deg,
-        rgb(255, 239, 198) 0%,
-        rgb(252, 228, 165) 50%,
-        #f4d06fff 70%,
-        rgb(255, 210, 85) 100%);
-    padding: 3px;
 }
 
 footer {
@@ -230,7 +224,7 @@ blockquote:after {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1.5em;
-    margin-top: 15px;
+    margin-top: 1.8em;
 }
 
 .box-name {
@@ -284,8 +278,12 @@ blockquote:after {
 /* || UTILITIES */
 
 .border-grafico {
-    border-top: 4px solid var(--colorGray);
-    padding-top: 10px;
+    border-top: 1.5px solid var(--colorGray);    
+}
+.border-grafico::before {
+    padding-top: 15px;
+    margin-top: 15px;
+
 }
 h1#text-title {
     position: absolute;
@@ -322,8 +320,8 @@ p#intro {
     font-family: Bitter, sans-serif;
     font-style: italic;
     font-weight: 00;
-    font-size: 10vw;
-    line-height: 6vw;
+    font-size: 14vw;
+    line-height: 10vw;
     padding-top: 1vw;
     padding-right: 1vw;
     padding-left: 1vw;
@@ -353,7 +351,7 @@ iframe.map {
     font-family: Bitter, Verdana, Tahoma, sans-serif;
     height: 4.2em;
     margin: auto;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 #orientacao {
