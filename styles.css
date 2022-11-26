@@ -151,7 +151,9 @@ footer {
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    height: 18em;
+    height: 15em;
+    padding: 0;
+    margin: 0;
     background-color: rgba(172, 172, 172, 0.486);
 }
 
@@ -214,7 +216,7 @@ blockquote:after {
     font-size: 25px;
     font-weight: 500;
     height: 25px;
-    margin-top: 2.5em;
+    margin: auto;
 }
 
 .credit {
@@ -331,7 +333,7 @@ p#intro {
     padding-bottom: 1px;
 }
 
-p:last-of-type {
+.metodologia, p:last-of-type {
     padding-bottom: 30px;
 }
 
@@ -353,14 +355,15 @@ iframe.map {
     justify-content: center;
     font-size: 1em;
     font-family: Bitter, Verdana, Tahoma, sans-serif;
-    height: 4.2em;
     margin: auto;
-    padding-bottom: 30px;
+    padding: auto;
+    height: 5.5em;
     max-width: 650px;
 }
 
 #orientacao {
     line-height: 1.5em;
+    padding-bottom: 100px;
 }
 
 .button {
@@ -386,7 +389,11 @@ iframe.map {
     transition: all .4s ease-in-out;
 }
 
-
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-blue), rgba(0, 0, 0, 0));
+}
 
 /* table style */
 
